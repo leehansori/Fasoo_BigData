@@ -6,7 +6,7 @@ title: "numpy, pandas"
 author: 이한솔
 ---
 
-## **목차**
+# **목차**
 1. Numpy 메모리 레이아웃
 2. numpy vs pandas 성능 비교 건
 
@@ -14,7 +14,7 @@ author: 이한솔
    
 ---
 
-## **numpy vs pandas 성능 비교 건**
+# **numpy vs pandas 성능 비교 건**
 [Numpy Vs Pandas Performance Comparison] <BR>
 <http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
    
@@ -55,6 +55,6 @@ print("pandas:", end-start)
    
 → 실제로 numpy가 약간 오래 걸림
    
-** .flags 속성을 통해 배열의 속성에 대한 정보를 확인**  
+## **flags 속성을 통해 배열의 속성에 대한 정보를 확인**  
  
    
