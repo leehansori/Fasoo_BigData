@@ -15,7 +15,7 @@ author: 이한솔
 ---
 
 ## **numpy vs pandas 성능 비교 건**
-### **<Test 확인>**
+### **1. Test 확인**
 [Numpy Vs Pandas Performance Comparison] <BR>
 <http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
    
@@ -53,10 +53,11 @@ print("pandas:", end-start)
    
 → 실제로 numpy가 약간 오래 걸림
    
-### **<flags 속성을 통해 배열의 속성에 대한 정보를 확인>**  
+### **2. flags 속성을 통해 배열의 속성에 대한 정보를 확인**  
 ```python
 data_rec.sepal_length.flags
 ``` 
 ![image](https://user-images.githubusercontent.com/109563345/231384119-05ffd27a-e48b-425a-954b-db9f1fff5fda.png)
   
-### **<to_numpy() vs to_records()>**  
+### **3. to_numpy() vs to_records()**  
+### **4. Structured Array**
