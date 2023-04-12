@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "VAR - 다변량 시계열 분석"
-date: 2022-4-22
+title: "numpy, pandas"
+regdate: 2023-04-03
+date: 2023-04-12
 author: 이한솔
 ---
 
