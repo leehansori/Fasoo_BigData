@@ -48,13 +48,15 @@ print("pandas:", end-start)
 
 ```
 
-**<결과>** <BR>
+**결과** <BR>
 ![image](https://user-images.githubusercontent.com/109563345/231366441-8434755c-4fcd-4f7c-903d-c109d2b925f3.png)
    
 → 실제로 numpy가 약간 오래 걸림
    
 ### **<flags 속성을 통해 배열의 속성에 대한 정보를 확인>**  
 ```python
+   data_rec.sepal_length.flags
 ``` 
-   
+![image](https://user-images.githubusercontent.com/109563345/231384119-05ffd27a-e48b-425a-954b-db9f1fff5fda.png)
+  
 ### **<to_numpy() vs to_records()>**  
