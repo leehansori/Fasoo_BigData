@@ -17,7 +17,8 @@ author: 이한솔
 [Numpy Vs Pandas Performance Comparison] 
 <http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
    
-**→ 위 테스트에서는 500,000 이상의 row에서 pandas가 numpy보다 더 나은 성능을 발휘한다고 주장**
+→ 위 테스트에서는 평균, 로그계산, 중복값 제거 등
+   500,000 이상의 row에서 pandas가 numpy보다 더 나은 성능을 발휘한다고 주장
 
 ```python
 import pandas as pd
@@ -50,3 +51,5 @@ print("pandas:", end-start)
 
 <결과> <BR>
 ![image](https://user-images.githubusercontent.com/109563345/231362278-38d93fcf-9654-4ef5-bcd9-bc488f2987d3.png)
+→ 실제로 numpy가 오래걸림
+   
