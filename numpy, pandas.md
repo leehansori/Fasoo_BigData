@@ -27,21 +27,8 @@ author: 이한솔
    
 ---
 
-## **1. 데이터셋**
-데이터셋은 ETT (Electricity Transformer Temperature, 변압기 오일 온도)을 사용하였습니다. 
-
-ETT는 변압기 오일 온도 예측 및 극한 부하 용량 조사를 위한 데이터셋입니다. <br>
-컬럼은 다음과 같습니다.
-
-date<br>
-HUFL : High UseFul Load <br>
-HULL : High UseLess Load <br>
-MUFL : Middle UseFul Load <br>
-MULL : Middle UseLess Load <br>
-LUFL : Low UseFul Load <br>
-LULL : Low UseLess Load <br>
-**OT : Oil Temperature** (Target) 
-
+## **numpy vs pandas 성능 비교 건**
+[numpy vs pandas 성능 비교 test]<http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
 
 ---
 
