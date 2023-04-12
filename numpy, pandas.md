@@ -23,6 +23,7 @@ author: 이한솔
 6. 모델 선정 (P parameter) 및 학습
 7. 예측 결과
 
+
 ---
 
 ## **1. 데이터셋**
@@ -39,6 +40,7 @@ MULL : Middle UseLess Load <br>
 LUFL : Low UseFul Load <br>
 LULL : Low UseLess Load <br>
 **OT : Oil Temperature** (Target) 
+
 
 ---
 
@@ -60,6 +62,7 @@ RangeIndex: 17420 entries, 0 to 17419 <br>
 Data columns (total 8 columns): <br>
 <img src="https://user-images.githubusercontent.com/96156882/170914427-109bdb7f-6c2b-4803-b51c-e57642aa9570.png" width="400">
 
+
 ---
 
 ## **3. 피어슨 상관 관계 분석**
@@ -72,6 +75,7 @@ heat_map.set_xticklabels(heat_map.get_xticklabels(), rotation=45);
 <img src="https://user-images.githubusercontent.com/96156882/164161250-f774591f-094e-41d3-a869-16d2f6fd4351.png" width="400">
 
 이를 통해 변수들과 Target값(OT)의 관계가 적음을 알 수 있습니다.
+
 
 ---
 
@@ -125,6 +129,7 @@ for name, column in ETT.iteritems():
     => Series is Non-Stationary. 
 
 위처럼 HUFL의 출력값을 포함해 모든 변수가 **비정상성**으로 검정되었습니다. <br>
+
 
 ---
 
