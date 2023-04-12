@@ -28,8 +28,8 @@ author: 이한솔
 ---
 
 ## **numpy vs pandas 성능 비교 건**
-[numpy vs pandas 성능 비교 test]<http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
-
+[numpy vs pandas 성능 비교 test] <http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
+&rightarrow 위 테스트에서는 500,000 이상의 row에서 pandas가 numpy보다 더 나은 성능을 발휘한다고 주장했습니다.
 ---
 
 ## **2. 데이터 로드**
