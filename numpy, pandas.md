@@ -15,7 +15,7 @@ author: 이한솔
 ---
 
 ## **numpy vs pandas 성능 비교 건**
-[Numpy Vs Pandas Performance Comparison] 
+[Numpy Vs Pandas Performance Comparison] <BR>
 <http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
    
 → 위 테스트에서는 평균, 로그계산, 중복값 제거 등
