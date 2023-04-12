@@ -35,16 +35,14 @@ data_rec = data.to_records()
 print (len(data), len(data_rec))
    
 # numpy로 평균 계산
-np_data = data_rec.sepal_length
 start = time.time()
-np.mean(np_data)
+np.mean(data_rec.sepal_length)
 end = time.time()
 print("numpy:", end-start)
 
 # pandas로 평균 계산
-pandas_data = data.loc[:, 'sepal_length']
 start = time.time()
-pandas_data.mean()
+data.loc[:, 'sepal_length'].mean()
 end = time.time()
 print("pandas:", end-start)
 
