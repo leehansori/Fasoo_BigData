@@ -49,7 +49,8 @@ print("pandas:", end-start)
 
 ```
 
-<결과> <BR>
+**<결과>** <BR>
 ![image](https://user-images.githubusercontent.com/109563345/231362278-38d93fcf-9654-4ef5-bcd9-bc488f2987d3.png)
+   
 → 실제로 numpy가 오래걸림
    
