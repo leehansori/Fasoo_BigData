@@ -49,7 +49,7 @@ print("pandas:", end-start)
 ```
 
 **<결과>** <BR>
-![image](https://user-images.githubusercontent.com/109563345/231362278-38d93fcf-9654-4ef5-bcd9-bc488f2987d3.png)
+![image](https://user-images.githubusercontent.com/109563345/231366441-8434755c-4fcd-4f7c-903d-c109d2b925f3.png)
    
 → 실제로 numpy가 약간 오래 걸림
    
