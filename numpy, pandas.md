@@ -7,7 +7,8 @@ author: 이한솔
 ---
 
 ## **목차**
-1. 데이터셋
+1. Numpy 메모리 레이아웃
+2. numpy vs pandas 성능 비교 건
 
 <Br>
    
@@ -20,7 +21,6 @@ author: 이한솔
 → 위 테스트에서는 평균, 로그계산, 중복값 제거 등
    500,000 이상의 row에서 pandas가 numpy보다 더 나은 성능을 발휘한다고 주장
 
-**<Test>**<Br>
 ```python
 import pandas as pd
 import seaborn as sns
