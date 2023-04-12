@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "numpy, pandas"
-regdate: 2023-04-03
-date: 2023-04-12
+등록일: 2023-04-03
+수정일: 2023-04-12
 author: 이한솔
 ---
 
