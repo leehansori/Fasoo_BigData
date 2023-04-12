@@ -48,4 +48,4 @@ print("pandas:", end-start)
 ```
 
 <결과> <BR>
-![image](https://user-images.githubusercontent.com/109563345/231361642-06573ae6-e56d-43d4-90a3-b8ee32fa0a39.png)
+![image](https://user-images.githubusercontent.com/109563345/231362278-38d93fcf-9654-4ef5-bcd9-bc488f2987d3.png)
