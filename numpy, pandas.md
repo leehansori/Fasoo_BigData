@@ -132,6 +132,7 @@ author: 이한솔
    
 ## **4. to_record**
    3번에서 C_CONTIGUOUS가 false인 이유를 찾기 위해 to_records를 자세히 찾아봄
+   to_record 함수 : DataFrame을 NumPy 레코드 배열로 변환. Return값은 numpy.recarray (Dataframe label을 필드로 사용하고 Dataframe의 각 행을 항목으로 사용하는 NumPy 배열)
    ```python
    data_rec = data.to_records()
    data_rec.sepal_length.flags
