@@ -115,8 +115,8 @@ author: 이한솔
    end = time.time()
    print("copy 한 후 시간:", end-start)
    ```
-   <img src="https://user-images.githubusercontent.com/109563345/231674900-1b48acd4-da0d-482c-85cb-ac966189d00a.png" width="500"> <br>
-   <img src="https://user-images.githubusercontent.com/109563345/231674813-1d5d67c5-96e7-42ca-9b97-51646848b66a.png" width="500">
+   <img src="https://user-images.githubusercontent.com/109563345/231674900-1b48acd4-da0d-482c-85cb-ac966189d00a.png" width="400"> <br>
+   <img src="https://user-images.githubusercontent.com/109563345/231674813-1d5d67c5-96e7-42ca-9b97-51646848b66a.png" width="400">
 
    
 <Br>
