@@ -101,7 +101,7 @@ author: 이한솔
    print("np.ascontiguousarray로 변환 후 시간:", end-start)
    ```
    **결과** <BR>
-   <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="500">
+   <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="450">
 
    ### **방법2. copy**  
    copy는 NumPy 배열을 복사하여 새로운 배열을 생성하는 기능으로 생성된 새로운 배열은 원본 배열과 독립적으로 메모리를 소유. <br>
@@ -115,8 +115,8 @@ author: 이한솔
    end = time.time()
    print("copy 한 후 시간:", end-start)
    ```
-   <img src="https://user-images.githubusercontent.com/109563345/231674900-1b48acd4-da0d-482c-85cb-ac966189d00a.png" width="400"> <br>
-   <img src="https://user-images.githubusercontent.com/109563345/231674813-1d5d67c5-96e7-42ca-9b97-51646848b66a.png" width="400">
+   <img src="https://user-images.githubusercontent.com/109563345/231674900-1b48acd4-da0d-482c-85cb-ac966189d00a.png" width="350"> <br>
+   <img src="https://user-images.githubusercontent.com/109563345/231674813-1d5d67c5-96e7-42ca-9b97-51646848b66a.png" width="350">
 
    
 <Br>
