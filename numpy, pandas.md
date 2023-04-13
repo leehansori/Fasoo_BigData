@@ -58,6 +58,7 @@ author: 이한솔
 ## **2. flags를 통해 배열의 속성에 대한 정보를 확인**  
 
    ```python
+   data_rec = data.to_records()
    data_rec.sepal_length.flags
    ``` 
    ![image](https://user-images.githubusercontent.com/109563345/231384119-05ffd27a-e48b-425a-954b-db9f1fff5fda.png)
