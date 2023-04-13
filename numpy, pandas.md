@@ -88,7 +88,7 @@ author: 이한솔
 <Br>
    
 ## **3. 메모리에 연속적으로 저장하기 위한 방법**  
-   ### **np.ascontiguousarray**  
+   ### **방법1. np.ascontiguousarray**  
    ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환.
    
    ```python
@@ -128,6 +128,11 @@ author: 이한솔
    **결과** <BR>
    <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="500">
 
+   ### **방법2. copy**  
+   copy는 NumPy 배열을 복사하여 새로운 배열을 생성하는 기능으로 생성된 새로운 배열은 원본 배열과 독립적으로 메모리를 소유. <br>
+   → 원본 배열의 데이터를 참조하는 것이 아니라, 별도의 메모리 공간에 복사된 데이터를 가지게 됨
+   
+   
 <Br>
    
 ## **4. to_record**
