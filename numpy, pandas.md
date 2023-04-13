@@ -92,24 +92,6 @@ author: 이한솔
    ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환.
    
    ```python
-   import pandas as pd
-   import seaborn as sns
-   import numpy as np
-   import time
-   import sys
-
-   # 데이터 500만개 생성해서 dataframe, ndarray로 변환
-   iris = sns.load_dataset('iris')
-   data = pd.concat([iris]*333334)
-   data_rec = data.to_records()
-   print (len(data), len(data_rec))
-
-   # numpy로 평균 계산
-   start = time.time()
-   np.mean(data_rec.sepal_length)
-   end = time.time()
-   print("numpy로 계산한 시간:", end-start)
-
    # np.ascontiguousarray 적용 후 평균 계산
    np_data = np.ascontiguousarray(data_rec.sepal_length) # 적용
    start = time.time()
@@ -117,13 +99,6 @@ author: 이한솔
    end = time.time()
    print("flags['C_CONTIGUOUS'] : ", np_data.flags['C_CONTIGUOUS'])
    print("np.ascontiguousarray로 변환 후 시간:", end-start)
-
-   # pandas로 평균 계산
-   start = time.time()
-   data.loc[:, 'sepal_length'].mean()
-   end = time.time()
-   print("\npandas로 계산한 시간:", end-start)
-
    ```
    **결과** <BR>
    <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="500">
@@ -132,6 +107,17 @@ author: 이한솔
    copy는 NumPy 배열을 복사하여 새로운 배열을 생성하는 기능으로 생성된 새로운 배열은 원본 배열과 독립적으로 메모리를 소유. <br>
    → 원본 배열의 데이터를 참조하는 것이 아니라, 별도의 메모리 공간에 복사된 데이터를 가지게 됨
    
+   ```python
+   # copy 한 후 평균 계산
+   np_data2 = data_rec.sepal_length.copy() # 적용
+   start = time.time()
+   np.mean(np_data2)
+   end = time.time()
+   print("copy 한 후 시간:", end-start)
+   ```
+   ![image](https://user-images.githubusercontent.com/109563345/231674900-1b48acd4-da0d-482c-85cb-ac966189d00a.png)
+   ![image](https://user-images.githubusercontent.com/109563345/231674813-1d5d67c5-96e7-42ca-9b97-51646848b66a.png)
+
    
 <Br>
    
