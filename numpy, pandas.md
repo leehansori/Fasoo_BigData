@@ -55,6 +55,8 @@ author: 이한솔
 
    → 실제로 numpy가 약간 오래 걸림
 
+<Br>
+         
 ## **2. flags를 통해 배열의 속성에 대한 정보를 확인**  
 
    ```python
@@ -83,7 +85,8 @@ author: 이한솔
 
    **→  데이터를 참조하고 있어 메모리에 연속적으로 저장되어 있지 않음**
 
-
+<Br>
+   
 ## **3. 메모리에 연속적으로 저장하기 위한 방법**  
    ### **np.ascontiguousarray**  
    ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환.
@@ -125,6 +128,7 @@ author: 이한솔
    **결과** <BR>
    <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="500">
 
-
+<Br>
+   
 ## **4. Structured Array**
    
