@@ -55,7 +55,7 @@ print("pandas:", end-start)
 
 → 실제로 numpy가 약간 오래 걸림
 
-## **2. flags 속성을 통해 배열의 속성에 대한 정보를 확인**  
+## **2. flags를 통해 배열의 속성에 대한 정보를 확인**  
 
 ```python
 data_rec.sepal_length.flags
