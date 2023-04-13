@@ -86,7 +86,7 @@ data_rec.sepal_length.flags
 ## **3. 메모리를 연속적으로 저장하기 위한 방법**  
    ### **3-1. to_numpy() vs to_records()**  
    ### **3-2. np.ascontiguousarray**  
-   ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환하기 때문에 더 빠르게 데이터를 불러올 수 있음
+   ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환.
    ```python
    import pandas as pd
    import seaborn as sns
