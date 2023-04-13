@@ -112,7 +112,7 @@ author: 이한솔
    start = time.time()
    np.mean(data_rec.sepal_length)
    end = time.time()
-   print("numpy:", end-start)
+   print("numpy로 계산한 시간:", end-start)
 
    # np.ascontiguousarray 적용 후 평균 계산
    np_data = np.ascontiguousarray(data_rec.sepal_length) # 적용
@@ -120,17 +120,17 @@ author: 이한솔
    np.mean(np_data)
    end = time.time()
    print("flags['C_CONTIGUOUS'] : ", np_data.flags['C_CONTIGUOUS'])
-   print("np.ascontiguousarray:", end-start)
+   print("np.ascontiguousarray로 변환 후 시간:", end-start)
 
    # pandas로 평균 계산
    start = time.time()
    data.loc[:, 'sepal_length'].mean()
    end = time.time()
-   print("pandas:", end-start)
+   print("\npandas로 계산한 시간:", end-start)
 
    ```
    **결과** <BR>
-   ![image](https://user-images.githubusercontent.com/109563345/231630439-f7249d62-246a-4f71-8277-3cb931d3ce85.png)
+  ![image](https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png)
 
 
 ## **4. Structured Array**
