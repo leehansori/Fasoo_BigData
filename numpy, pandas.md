@@ -14,8 +14,8 @@ author: 이한솔
    
 ---
 
-## **numpy vs pandas 성능 비교 건**
-### **1. Test 확인**
+# **numpy vs pandas 성능 비교 건**
+## **1. Test 확인**
 [Numpy Vs Pandas Performance Comparison] <BR>
 <http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html#Operations-on-a-Column>
 
@@ -53,7 +53,7 @@ print("pandas:", end-start)
 
 → 실제로 numpy가 약간 오래 걸림
 
-### **2. flags 속성을 통해 배열의 속성에 대한 정보를 확인**  
+## **2. flags 속성을 통해 배열의 속성에 대한 정보를 확인**  
 
 ```python
 data_rec.sepal_length.flags
@@ -76,7 +76,7 @@ data_rec.sepal_length.flags
 
 **→ 메모리에 연속적으로 저장되어 있지 않고, 데이터를 참조하고 있음**
 
-### **3. row-major, column-major**
+## **3. row-major, column-major**
 - 다차원 배열의 요소를 메모리에 배치하는 방식
    
 3-1. row-major
@@ -89,6 +89,6 @@ data_rec.sepal_length.flags
   ex) Fortran과 같은 언어에서 일반적으로 사용됨
 <img src="https://user-images.githubusercontent.com/109563345/231620757-cf9eca8b-1006-4835-b121-d84d939e39cf.png" width="200">
 
-### **4. to_numpy() vs to_records()**  
-### **5. Structured Array**
+## **4. to_numpy() vs to_records()**  
+## **5. Structured Array**
    
