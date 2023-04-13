@@ -130,7 +130,7 @@ author: 이한솔
 
    ```
    **결과** <BR>
-   <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="300">
+   <img src="https://user-images.githubusercontent.com/109563345/231657441-615ee133-349c-4568-83e2-d28e4b380dd8.png" width="200">
 
 
 ## **4. Structured Array**
