@@ -130,5 +130,10 @@ author: 이한솔
 
 <Br>
    
-## **4. Structured Array**
-   
+## **4. to_record**
+   3번에서 C_CONTIGUOUS가 false인 이유를 찾기 위해 to_records를 자세히 찾아봄
+   ```python
+   data_rec = data.to_records()
+   data_rec.sepal_length.flags
+   ``` 
+   [to_record 링크]<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_records.html>
