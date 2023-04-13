@@ -82,12 +82,12 @@ data_rec.sepal_length.flags
 3-1. row-major
 - 다차원 배열의 요소를 행(row) 단위로 메모리에 저장하는 방식. 한 행의 요소들이 연속적으로 메모리에 저장되고, 다음 행의 요소들이 그 다음 위치에 연속적으로 저장되는 방식<br>
   ex) c, c++ 에서 일반적으로 사용됨
-<img src="https://user-images.githubusercontent.com/109563345/231620441-11f1c079-f306-4913-af97-d69ca54dc76f.png" width="400">
+<img src="https://user-images.githubusercontent.com/109563345/231621004-8896f889-bf36-4f49-8d70-8bd2c6f84835.png" width="200">
 
 3-2. column-major
 - 다차원 배열의 요소를 열(column) 단위로 메모리에 저장하는 방식. 한 열의 요소들이 연속적으로 메모리에 저장되고, 다음 열의 요소들이 그 다음 위치에 연속적으로 저장되는 방식<br>
   ex) Fortran과 같은 언어에서 일반적으로 사용됨
-<img src="https://user-images.githubusercontent.com/109563345/231620757-cf9eca8b-1006-4835-b121-d84d939e39cf.png" width="400">
+<img src="https://user-images.githubusercontent.com/109563345/231620757-cf9eca8b-1006-4835-b121-d84d939e39cf.png" width="200">
 
 ### **4. to_numpy() vs to_records()**  
 ### **5. Structured Array**
