@@ -85,14 +85,7 @@ author: 이한솔
 
 
 ## **3. 메모리에 연속적으로 저장하기 위한 방법**  
-   ### **3-1. to_numpy() vs to_records()**  
-   
-   ```python
-   data_rec = data.to_records()
-   np.mean(data_rec.sepal_length)
-   ```
-   
-   ### **3-2. np.ascontiguousarray**  
+   ### **np.ascontiguousarray**  
    ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환.
    
    ```python
