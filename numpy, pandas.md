@@ -63,12 +63,12 @@ data_rec.sepal_length.flags
 2-1. C_CONTIGUOUS
 - 배열의 데이터가 C 스타일의 행 우선(row-major) 메모리 배치 방식으로 저장되어 있는지를 나타내는 속성
 - True일 경우 배열의 데이터가 메모리에 행이 연속적으로 저장되어 있어 인덱스 계산이 빠름 <br>
-   - 행 중심(row-major) 메모리 배치 방식 : 배열의 각 행(row)이 연속적으로 저장되어 있고, 열(column)이 연속적으로 변하는 방식으로 데이터가 저장
+   - 행 중심(row-major) 메모리 배치 방식 : 다차원 배열의 요소를 행(row) 단위로 메모리에 저장하는 방식
 
 2-2. F_CONTIGUOUS
 - 배열의 데이터가 Fortran 스타일의 열 우선(column-major) 메모리 배치 방식으로 저장되어 있는지를 나타내는 속성
 - True일 경우 배열의 데이터가 메모리에 열이 연속적으로 저장되어 있어 인덱스 계산이 빠름 <br>
-   - 열 중심(column-major) 메모리 배치 방식 : 배열의 각 열(column)이 연속적으로 저장되어 있고, 행(row) 연속적으로 변하는 방식으로 데이터가 저장
+   - 열 중심(column-major) 메모리 배치 방식 : 다차원 배열의 요소를 열(column) 단위로 메모리에 저장하는 방식
 
 2-3. OWNDATA
 - 배열이 소유하는 데이터 메모리를 갖고 있는지 나타내는 속성
@@ -77,6 +77,18 @@ data_rec.sepal_length.flags
 **→ 메모리에 연속적으로 저장되어 있지 않고, 데이터를 참조하고 있음**
 
 ### **3. row-major, column-major**
+- 다차원 배열의 요소를 메모리에 배치하는 방식
+   
+3-1. row-major
+- 다차원 배열의 요소를 행(row) 단위로 메모리에 저장하는 방식. 한 행의 요소들이 연속적으로 메모리에 저장되고, 다음 행의 요소들이 그 다음 위치에 연속적으로 저장되는 방식
+  ex) c, c++ 에서 일반적으로 사용됨
+![image](https://user-images.githubusercontent.com/109563345/231620441-11f1c079-f306-4913-af97-d69ca54dc76f.png)
+
+3-2. column-major
+- 다차원 배열의 요소를 열(column) 단위로 메모리에 저장하는 방식. 한 열의 요소들이 연속적으로 메모리에 저장되고, 다음 열의 요소들이 그 다음 위치에 연속적으로 저장되는 방식
+  ex) Fortran과 같은 언어에서 일반적으로 사용됨
+![image](https://user-images.githubusercontent.com/109563345/231620757-cf9eca8b-1006-4835-b121-d84d939e39cf.png)
+
 ### **4. to_numpy() vs to_records()**  
 ### **5. Structured Array**
    
