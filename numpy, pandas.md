@@ -71,7 +71,7 @@ data_rec.sepal_length.flags
 
 2-3. OWNDATA
 - 배열이 소유하는 데이터 메모리를 갖고 있는지 나타내는 속성
-- True일 경우 배열이 자체적으로 데이터를 소유, False일 경우 배열이 데이터를 공유하거나 참조하여, 데이터를 소유하지 않음
+- True일 경우 배열이 자체적으로 데이터를 소유, False일 경우 배열이 데이터를 공유하거나 참조하여 데이터를 소유하지 않음
    
 ### **3. to_numpy() vs to_records()**  
 ### **4. Structured Array**
