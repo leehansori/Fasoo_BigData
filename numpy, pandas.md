@@ -85,6 +85,7 @@ data_rec.sepal_length.flags
 <img src="https://user-images.githubusercontent.com/109563345/231621004-8896f889-bf36-4f49-8d70-8bd2c6f84835.png" width="200">
 메모리에는 다음과 같이 1차원으로 펴져서 저장된다. [ a11 a12 a13 a21 a22 a23 a31 a32 a33] <br><br>
 
+   
 2) column-major
 - 다차원 배열의 요소를 열(column) 단위로 메모리에 저장하는 방식. 한 열의 요소들이 연속적으로 메모리에 저장되고, 다음 열의 요소들이 그 다음 위치에 연속적으로 저장되는 방식<br>
   ex) Fortran과 같은 언어에서 일반적으로 사용됨
