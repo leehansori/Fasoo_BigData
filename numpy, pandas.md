@@ -83,6 +83,9 @@ data_rec.sepal_length.flags
 **→  데이터를 참조하고 있어 메모리에 연속적으로 저장되어 있지 않음**
 
 
-## **3. to_numpy() vs to_records()**  
+## **3. 메모리를 연속적으로 저장하기 위한 방법**  
+   ## **3-1. to_numpy() vs to_records()**  
+   ## **3-2. np.ascontiguousarray**  
+
 ## **4. Structured Array**
    
