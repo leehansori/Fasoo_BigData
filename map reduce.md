@@ -38,6 +38,17 @@ author: 이한솔
    2. TotalOrderPartitioner를 사용해 partition 자동 생성
    3. Secondary Sort의 Composite Key를 사용하여 "Total Secondary Sorting"
 
+   ## **1. 사용자 지정 partitioning**
+   기본 partitioner가 아닌 partition에서 getPartition()메서드를 구현해서 각 reducer에 key를 할당하는 방법.   
+   
+   예시)   
+   Reducer 0 : A ~ I로 시작하는 key   
+   Reducer 1 : J ~ Q로 시작하는 key   
+   Reducer 2 : R ~ Z로 시작하는 key   
+   
+   문제점 : Reducer 간의 하중 분포가 같지 않음. key가 고르게 분포되어 있지 않을 확률이 높음
+   
+   ## **2. TotalOrderPartitioner를 사용해 partition 자동 생성**
 
 ---
    
