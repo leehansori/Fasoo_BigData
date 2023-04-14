@@ -87,7 +87,7 @@ author: 이한솔
 <Br>
    
 ## **3. 메모리 참조하지 않고 연속적으로 저장하기 위한 방법**  
-   > Dataframe을 Numpy로 변환하여 연산 할 때는 다음과 같은 방법을 이용하면 속도를 줄일 수 있음
+   > Dataframe → Numpy로 변환 후 특정 열을 추출해 연산 할 때는 다음과 같은 방법을 이용하면 속도를 줄일 수 있음
    
    ### **방법1. np.ascontiguousarray**  
    ascontiguousarray 함수는 메모리에 연속적으로 저장되지 않는 배열을 연속적으로 저장되는 배열(row-major. c 스타일)로 변환.
