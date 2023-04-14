@@ -28,7 +28,7 @@ author: 이한솔
    Map 함수의 출력 데이터를 받아 더 작은 값 집합으로 줄임. 그룹화 및 집계 등의 필요한 연산을 수행하여 최종 결과를 생성하는 함수
 
 # **Total Order Sorting**
-각 Reducer는 Partitioner에 의해 할당된 (key, value) 쌍을 받는다. Reducer가 중간 데이터를 수신하면 key별로 정렬되므로 일반적으로 Reducer의 출력도 key별로 정렬됨.   
+각 Reducer는 Partitioner에 의해 할당된 (key, value) 쌍을 받음. Reducer가 중간 데이터를 수신하면 key별로 정렬되므로 일반적으로 Reducer의 출력도 key별로 정렬됨.   
 그러나 서로 다른 Reducer의 출력은 서로 순서가 맞지 않음.
    
 
