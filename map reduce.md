@@ -22,5 +22,5 @@ author: 이한솔
 3. shuffing
    - shuffle : 리듀서로 데이터 이동
    - sort : 리듀서로 전달된 데이터를 key 값 기준으로 정렬 (default 오름차순)
-4. Reduce
+4. Reducing   
    Map 함수의 출력 데이터를 받아 그룹화 및 집계 등의 필요한 연산을 수행하여 최종 결과를 생성하는 함수
