@@ -21,7 +21,7 @@ author: 이한솔
 2. mapping   
    입력 데이터를 받아 key-value를 생성하는 함수. 데이터의 필요한 부분만 선별하기 위한 데이터 필터링 과정
 3. shuffing   
-   Mapping 출력 데이터를 Reducer로 이동. 이 때 중간 데이터의 재분배(partition) 및 정렬(sort) 작업
+   Mapping 출력 데이터(중간 결과)를 Reducer로 이동. 이 때 중간 결과의 재분배(partition) 및 정렬(sort) 작업
    - partition : 맵의 결과 키를 리듀서로 분배하는 기준을 만드는 것. 기본 파티션으로 HashPartitioner
    - sort : 리듀서로 전달된 데이터를 key 값 기준으로 정렬 (default 오름차순). 맵리듀스 프레임워크는 mapper의 output을 자동으로 정렬해서 reducer로 전달
 4. Reducer   
