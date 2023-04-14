@@ -14,7 +14,7 @@ author: 이한솔
 ---
 
 # **numpy vs pandas 성능 비교 건**
-![image](https://user-images.githubusercontent.com/109563345/231960330-7183dce1-2edc-41d6-a450-3efab02edd0a.png)
+   <img src="https://user-images.githubusercontent.com/109563345/231960330-7183dce1-2edc-41d6-a450-3efab02edd0a.png" width="400">
 1. split   
    입력 데이터를 분할
 2. mapping   
