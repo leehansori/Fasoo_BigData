@@ -49,7 +49,7 @@ author: 이한솔
    문제점 : Reducer 간의 하중 분포가 같지 않음. key가 고르게 분포되어 있지 않을 확률이 높음
    
    ## **2. TotalOrderPartitioner를 사용해 partition 자동 생성**
-
+   1번 방법과 동일한 작업을 수행하지만 Reducer 간의 load balancing을 통해 동적으로 수행됨.   
 ---
    
 출처   
