@@ -50,7 +50,11 @@ author: 이한솔
    
    ## **2. TotalOrderPartitioner를 사용해 partition 자동 생성**
    1번 방법과 동일한 작업을 수행하지만 Reducer 간의 load balancing을 통해 동적으로 수행됨.   
+   ![image](https://user-images.githubusercontent.com/109563345/232383664-49fff920-b3e0-4d16-855f-4aa1e1044baa.png)
+
+   
 ---
    
 출처   
 [Total Order Sorting]<http://blog.ditullio.fr/2016/01/04/hadoop-basics-total-order-sorting-mapreduce/>
+[맵리듀스 전체 정렬]<http://dandasdata.blogspot.com/2017/06/7.html>
