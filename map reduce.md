@@ -2,7 +2,7 @@
 layout: post
 title: "map reduce"
 등록일: 2023-04-13
-수정일: 2023-04-13
+수정일: 2023-04-17
 author: 이한솔
 ---
 
