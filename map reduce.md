@@ -13,8 +13,8 @@ author: 이한솔
 ---
 
 # **MapReduce Flow**
-   <img src="https://user-images.githubusercontent.com/109563345/231960330-7183dce1-2edc-41d6-a450-3efab02edd0a.png" width="550">
-   
+   <img src="https://user-images.githubusercontent.com/109563345/232403737-1a2b8ce4-02ac-43b0-bd1c-c1c4a0b8fcac.png" width="550">
+
    **1. split**   
       입력 데이터를 분할   
    **2. mapping**   
