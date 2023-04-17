@@ -9,9 +9,7 @@ author: 이한솔
 ## **목차**
 1. MapReduce Flow
 2. Total Order Sorting
-
 <Br>
-   
 ---
 
 # **MapReduce Flow**
