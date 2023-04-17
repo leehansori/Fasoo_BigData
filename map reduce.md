@@ -10,6 +10,20 @@ author: 이한솔
 1. MapReduce Flow
 2. Total Order Sorting
 
+
+---
+
+   > MapReduce는 클러스터 환경에서 대용량의 데이터 처리를 위해 Map, Reduce 두 개의 함수로 처리 과정을 나눈 병렬 처리 기법
+   - 오픈 소스
+      - Hadoop (분산 처리-MapReduce, 분산 저장-HDFS)
+   - Task 예시
+      - Word Count : 각 단어의 횟수를 카운팅
+      - Distributed Grep : 특정 패턴을 가진 텍스트 검색
+      - Reverse Web-Link Graph : 웹 페이지 간의 링크 관계를 그래프로 표현
+      - inverted index : 각 단어가 어떤 문서에 나타나는지를 기록하는 방식. 키워드를 통해 문서를 검색
+      - Distributed Sort : 데이터 정렬
+      ***Distributed Sort**
+      MAP 기능은 key를 추출. 각 Mapper에서 <key, value> 쌍을 내보냅니다. Reducer는 모든 쌍을 변경하지 않고 내보냅니다. 
 ---
 
 # **MapReduce Flow**
