@@ -6,13 +6,6 @@ title: "numpy, pandas"
 author: 이한솔
 ---
 
-## **목차**
-1. numpy vs pandas 성능 비교 건
-
-<Br>
-   
----
-
 # **numpy vs pandas 성능 비교 건**
    ## **1. Test 확인**
    [Numpy Vs Pandas Performance Comparison] <BR>
