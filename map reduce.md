@@ -20,8 +20,8 @@ author: 이한솔
       입력 데이터를 분할
    2. mapping   
       입력 데이터를 받아 key-value를 생성하는 함수. 데이터의 필요한 부분만 선별하기 위한 데이터 필터링 과정
-   3. shuffing   
-      Mapping 출력 데이터(중간 결과)를 Reducer로 이동. 이 때 중간 결과의 재분배(partition) 및 정렬(sort) 작업
+   3. shuffling   
+      Mapping 출력 데이터(중간 결과)를 Reducer로 이동. 이 때 중간 결과의 분배(partition) 및 정렬(sort) 작업
       - partition : 맵의 결과 키를 리듀서로 분배하는 기준을 만드는 것. 기본 파티션으로 HashPartitioner
       - sort : 리듀서로 전달된 데이터를 key 값 기준으로 정렬 (default 오름차순). 맵리듀스 프레임워크는 mapper의 output을 자동으로 정렬해서 reducer로 전달
    4. Reducer   
@@ -31,9 +31,9 @@ author: 이한솔
    기본 파티션을 나누는 방법으로 key값을 Hash코드로 바꾼 뒤, Reducer의 갯수로 그 Hash코드를 나눠서 나온 나머지로 Reducer를 정함   
    예시)
    
-   ---
-   
    <Br>
+      
+   ---
    
 # **Total Order Sorting**
    각 Reducer는 Partitioner에 의해 할당된 중간 결과(key, value) 쌍을 받음. Reducer가 중간 결과를 수신하면 key별로 정렬되므로 일반적으로 Reducer의 출력도 key별로 정렬됨 → Reducer별로 정렬은 가능함   
