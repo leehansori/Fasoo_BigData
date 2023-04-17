@@ -80,4 +80,4 @@ author: 이한솔
    
 출처   
 [Total Order Sorting]<http://blog.ditullio.fr/2016/01/04/hadoop-basics-total-order-sorting-mapreduce/>   
-[맵리듀스 전체 정렬]<https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=imf4&logNo=220734850771>
+[맵리듀스 전체 정렬]<https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=imf4&logNo=220734850771>, <https://lsh110600.github.io/de/2021/01/28/de-hadoop-ch6-part2/>
