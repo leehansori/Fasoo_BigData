@@ -27,7 +27,7 @@ author: 이한솔
    4. Reducer   
       Map 함수의 출력 데이터를 받아 더 작은 값 집합으로 줄임. 그룹화 및 집계 등의 필요한 연산을 수행하여 최종 결과를 생성하는 함수
    
-   **HashPartitioner**
+   ***HashPartitioner**   
    기본 파티션을 나누는 방법으로 key값을 Hash코드로 바꾼 뒤, Reducer의 갯수로 그 Hash코드를 나눠서 나온 나머지로 Reducer를 정함   
    예시)
    
