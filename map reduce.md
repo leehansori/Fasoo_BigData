@@ -59,7 +59,7 @@ author: 이한솔
    3. 미리 생성한 파티션 정보에 맞게 출력 데이터를 생성한다.
    4. 각 출력 데이터를 병합한다.
    
-   ### **전체정렬에 활용되는 TotalOrderPartitioner** 
+   ### **전체 정렬에 활용되는 TotalOrderPartitioner** 
    - InputSampler : 입력데이터에서 특정 개수의 데이터를 추출해 키와 데이터 건수를 샘플링 = 데이터 분포도 작성.
    - TotalOrderPartitioner : 파티션개수와 파티션에 저장할 데이터범위를 설정   
    ![image](https://user-images.githubusercontent.com/109563345/232383664-49fff920-b3e0-4d16-855f-4aa1e1044baa.png)
