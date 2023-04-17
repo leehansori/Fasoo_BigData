@@ -30,8 +30,8 @@ author: 이한솔
    ***HashPartitioner**   
    기본 파티션을 나누는 방법으로 key값을 Hash코드로 바꾼 뒤, Reducer의 갯수로 그 Hash코드를 나눠서 나온 나머지로 Reducer를 정함   
    예시) Reducer 개수 2개   
-   bad -> 30 / 2 = 15.. 나머지 0 -> Reducer 0번   
-   class -> 59 / 2 = 29.. 나머지 1 -> Reducer 1번   
+   bad -> 30 / 2 = 15... 나머지 0 -> Reducer 0번   
+   class -> 59 / 2 = 29... 나머지 1 -> Reducer 1번   
    
    <Br>
       
