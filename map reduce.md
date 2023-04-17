@@ -26,10 +26,10 @@ author: 이한솔
       - sort : 리듀서로 전달된 데이터를 key 값 기준으로 정렬 (default 오름차순). 맵리듀스 프레임워크는 mapper의 output을 자동으로 정렬해서 reducer로 전달
    4. Reducer   
       Map 함수의 출력 데이터를 받아 더 작은 값 집합으로 줄임. 그룹화 및 집계 등의 필요한 연산을 수행하여 최종 결과를 생성하는 함수
-
-   ---
    
 # **HashPartitioner**
+   
+   ---
    
 # **Total Order Sorting**
    각 Reducer는 Partitioner에 의해 할당된 중간 결과(key, value) 쌍을 받음. Reducer가 중간 결과를 수신하면 key별로 정렬되므로 일반적으로 Reducer의 출력도 key별로 정렬됨 → Reducer별로 정렬은 가능함   
