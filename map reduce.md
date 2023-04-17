@@ -41,7 +41,7 @@ author: 이한솔
    각 Reducer는 Partitioner에 의해 할당된 중간 결과(key, value) 쌍을 받음. Reducer가 중간 결과를 수신하면 key별로 정렬되므로 일반적으로 Reducer의 출력도 key별로 정렬됨 → Reducer별로 정렬은 가능함   
    그러나 서로 다른 Reducer의 출력은 서로 순서가 맞지 않아 전체 정렬은 불가능함
 
-   Total Order Sorting 방법
+   ### **Total Order Sorting 방법**
    1. 사용자 지정 partitioning
    2. TotalOrderPartitioner를 사용해 partition 자동 생성
 
