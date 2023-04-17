@@ -29,11 +29,13 @@ author: 이한솔
 
    ---
    
+# **HashPartitioner**
+   
 # **Total Order Sorting**
    각 Reducer는 Partitioner에 의해 할당된 (key, value) 쌍을 받음. Reducer가 중간 데이터를 수신하면 key별로 정렬되므로 일반적으로 Reducer의 출력도 key별로 정렬됨.   
    그러나 서로 다른 Reducer의 출력은 서로 순서가 맞지 않음.
 
-   Total Order Sorting
+   Total Order Sorting 방법
    1. 사용자 지정 partitioning
    2. TotalOrderPartitioner를 사용해 partition 자동 생성
 
@@ -48,18 +50,23 @@ author: 이한솔
    문제점 : Reducer 간의 하중 분포가 같지 않음. key가 고르게 분포되어 있지 않을 확률이 높음
    
    ## **2. TotalOrderPartitioner를 사용해 partition 자동 생성**
-   1번 방법과 동일한 작업을 수행하지만 Reducer 간의 load balancing을 위해 각 파티션에 고르게 데이터 배분하는 방법을 하둡에서 제공   
+   1번 방법과 동일한 작업을 수행하지만 Reducer 간의 load balancing을 위해 각 파티션에 고르게 데이터 배분하는 방법을 Hadoop Mapreduce에서 제공   
    
-   ### **해결 로직**      
-   입력데이터를 샘플링하여 데이터 분포도 조사 후 partition을 나눔
-   - 분포도에 맞게 partition 정보 생성
-   - partition 정보에 맞게 출력 데이터 생성
-   - 각 출력 데이터를 병합   
+   ### **Total sort 방법**      
+   입력데이터를 샘플링하여 데이터 분포도 조사 후 partition을 나눔   
+   1. 입력데이터를 샘플링해서 데이터의 분포도를 조사한다.
+   2. 데이터의 분포도에 맞게 파티션 정보를 미리 생성한다.
+   3. 미리 생성한 파티션 정보에 맞게 출력 데이터를 생성한다.
+   4. 각 출력 데이터를 병합한다.
+   
+   ### **전체정렬에 활용되는 TotalOrderPartitioner** 
+   - InputSampler : 입력데이터에서 특정 개수의 데이터를 추출해 키와 데이터 건수를 샘플링 = 데이터 분포도 작성.
+   - TotalOrderPartitioner : 파티션개수와 파티션에 저장할 데이터범위를 설정   
    ![image](https://user-images.githubusercontent.com/109563345/232383664-49fff920-b3e0-4d16-855f-4aa1e1044baa.png)
 
    
 ---
    
 출처   
-[Total Order Sorting]<http://blog.ditullio.fr/2016/01/04/hadoop-basics-total-order-sorting-mapreduce/>
-[맵리듀스 전체 정렬]<http://dandasdata.blogspot.com/2017/06/7.html>
+[Total Order Sorting]<http://blog.ditullio.fr/2016/01/04/hadoop-basics-total-order-sorting-mapreduce/>   
+[맵리듀스 전체 정렬]<https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=imf4&logNo=220734850771>
