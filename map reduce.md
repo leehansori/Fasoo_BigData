@@ -29,7 +29,7 @@ author: 이한솔
    <img src="https://user-images.githubusercontent.com/109563345/232403737-1a2b8ce4-02ac-43b0-bd1c-c1c4a0b8fcac.png" width="550">
 
    **1. split**   
-         입력 데이터를 분할   
+      입력 데이터를 분할   
    **2. mapping**   
       입력 데이터를 받아 key-value를 생성하는 함수. 데이터의 필요한 부분만 선별하기 위한 데이터 필터링 과정   
    **3. shuffling**   
