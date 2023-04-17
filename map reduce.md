@@ -35,7 +35,7 @@ author: 이한솔
    **3. shuffling**   
       Mapping 출력 데이터(중간 결과)를 Reducer로 이동. 이 때 중간 결과의 분배(partition) 및 정렬(sort) 작업   
       - partition : 맵의 결과 키를 리듀서로 분배하는 기준을 만드는 것. 기본 파티션으로 HashPartitioner   
-             - *HashPartitioner   
+            *HashPartitioner   
              기본 파티션을 나누는 방법으로 key값을 Hash코드로 바꾼 뒤, Reducer의 갯수로 그 Hash코드를 나눠서 나온 나머지로 Reducer를 정함   
              예시) Reducer 개수 2개   
              bad -> 30 / 2 = 15... 나머지 0 -> Reducer 0번   
