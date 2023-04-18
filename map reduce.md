@@ -94,6 +94,12 @@ author: 이한솔
    
    ![image](https://user-images.githubusercontent.com/109563345/232383664-49fff920-b3e0-4d16-855f-4aa1e1044baa.png)
 
+   ---
+   
+ ### **이슈 사항**
+   1. MapReduce는 Network I/O copy가 너무 많이 발생. Network copy overhead를 어떻게 해결?
+   2. 값이 다 unique할 경우엔 reduce가 안됨
+   3. 샘플링이 잘 됐나? 샘플링의 신뢰성
    
 ---
    
