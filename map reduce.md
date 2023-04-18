@@ -88,7 +88,9 @@ author: 이한솔
    - InputSampler : 입력데이터에서 특정 개수의 데이터를 추출해 키와 데이터 건수를 샘플링 = 데이터 분포도 작성.
       - IntervalSampler(Input split에서 일정한 간격으로 키를 수집), RandomSampler(Input split에서 일정 확률로 키를 수집)   
    - TotalOrderPartitioner : 파티션개수와 파티션에 저장할 데이터범위를 설정   
+   
    <br>
+   
    ![image](https://user-images.githubusercontent.com/109563345/232383664-49fff920-b3e0-4d16-855f-4aa1e1044baa.png)
 
    
