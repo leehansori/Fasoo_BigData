@@ -64,7 +64,7 @@ author: 이한솔
    ## **1. 사용자 지정 partitioning**
    기본 partitioner가 아닌 partition에서 getPartition()메서드를 통해 분배하는 기준을 직접 구현해서 각 reducer에 key를 할당하는 방법.   
    
-   예시) key값이 알파벳으로 되어 있는 경우   
+   예시) key값이 알파벳으로 되어 있고, Reducer가 3개인 경우   
    Reducer 0 : A ~ I로 시작하는 key   
    Reducer 1 : J ~ Q로 시작하는 key   
    Reducer 2 : R ~ Z로 시작하는 key   
